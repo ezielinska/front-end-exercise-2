@@ -206,7 +206,7 @@ p.description {
 /*Our-services*/
 
 .our-services {
-    background-image: url('images/services-section.png');
+    background-image: url('../images/services-section.png');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
