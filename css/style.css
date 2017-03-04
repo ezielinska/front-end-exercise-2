@@ -1,0 +1,392 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.btn {
+    background-color: #565353;
+    padding: 15px 95px;
+    line-height: 1.2;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+    text-align: center;
+    border: 0;
+}
+
+.arrow {
+    position: relative;
+    top: -2px;
+}
+
+@media (max-width:992px) {
+    .container {
+        width: auto;
+        padding: 0 20px;
+    }
+    .hidden-mobile {
+        display: none;
+    }
+}
+
+.incomplete-border {
+    border: 2px solid;
+    border-top: 0;
+    position: relative;
+    padding: 60px;
+}
+
+.incomplete-border:before,
+.incomplete-border:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 20%;
+    border-top: 2px solid;
+}
+
+.incomplete-border:before {
+    left: 0;
+}
+
+.incomplete-border:after {
+    right: 0;
+}
+
+.incomplete-border.black,
+.incomplete-border.black:before,
+.incomplete-border.black:after {
+    border-color: black;
+    color: black;
+}
+
+.incomplete-border.white,
+.incomplete-border.white:before,
+.incomplete-border.white:after {
+    border-color: white;
+    color: white;
+}
+
+.incomplete-border h1.title {
+    position: absolute;
+    top: -35px;
+    left: 0;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+    font-size: 56px;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+p.description {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: justify;
+    -moz-text-align-last: center;
+    text-align-last: center;
+    margin: 40px 0 40px;
+}
+
+.subpage-header {
+    padding: 30px 0;
+    background-color: black;
+    background-image: url('/images/background.png');
+    background-repeat: no-repeat;
+}
+
+.subpage-header h1 {
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    color: white;
+    display: inline-block;
+    margin-left: 30px;
+    letter-spacing: 5px;
+}
+
+.subpage-header h1 a {
+    text-decoration: none;
+    color: white;
+}
+
+.subpage-header img {
+    text-align: left;
+    margin-left: 60px;
+    vertical-align: middle;
+}
+
+
+/*Site intro*/
+
+.site-intro {
+    background-color: black;
+    background-image: url('/images/background.png');
+    background-repeat: no-repeat;
+    background-position: center 100%;
+    min-height: 100vh;
+    position: relative;
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.site-intro .text-wrapper {
+    margin-top: 80px;
+}
+
+.site-intro figure.logo {
+    margin: 120px 0 20px;
+    display: inline-block;
+}
+
+.site-intro figure.logo img {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+
+.site-intro h1.title {
+    font-family: 'Lato', sans-serif;
+    font-size: 54px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 8px;
+}
+
+.site-intro p.intro-description {
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    color: white;
+    text-transform: uppercase;
+    line-height: 1.933;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.site-intro figure.scroll-down {
+    position: absolute;
+    left: 0;
+    bottom: 120px;
+    width: 100%;
+}
+
+.site-intro figure.scroll-down img {
+    margin: 0 auto;
+    display: block;
+}
+
+
+/*About-us*/
+
+.about-us {
+    padding: 80px 0;
+}
+
+
+/*Our-services*/
+
+.our-services {
+    background-image: url('/images/services-section.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    padding: 80px 0;
+}
+
+.our-services p.description {
+    text-align: center;
+}
+
+
+/*What-we-do*/
+
+.what-we-do {
+    padding: 80px 0;
+}
+
+.what-we-do h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 33px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+    margin-top: 40px;
+    letter-spacing: 4px;
+}
+
+.what-we-do figure.icon {
+    text-align: center;
+    margin-top: 80px;
+}
+
+
+/*Our-works*/
+
+.our-works {
+    font-size: 0;
+}
+
+.our-works .single-work {
+    background-color: tomato;
+    display: inline-block;
+    width: 30%;
+    font-size: 15px;
+    min-height: 200px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.our-works .single-work.wide {
+    width: calc(40% - 20px);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.our-works .single-work h6 {
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: left;
+    color: white;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    letter-spacing: 4px;
+}
+
+
+/* single-project-page*/
+
+.single-project {
+    padding: 120px 0 80px;
+    text-align: center;
+}
+
+.single-project p {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    line-height: 1.4;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+.single-project h1.title {
+    margin-bottom: 10px;
+}
+
+.single-project figure {
+    margin: 50px 0 40px;
+}
+
+.single-project figure img {
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+.single-project figure figcaption {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+
+/*Contact-us-page*/
+
+.contact-us {
+    padding: 80px 0;
+}
+
+
+/*Contact-form*/
+
+.contact-form {
+    padding-top: 80px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.contact-form h1.title {
+    margin-bottom: 30px;
+    text-decoration: none;
+}
+
+.contact-form p {
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    text-align: left;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.contact-form form input[type="text"],
+.contact-form form input[type="email"],
+.contact-form form textarea {
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    padding: 15px;
+}
+
+.contact-form form input[type="email"],
+.contact-form form input[type="text"] {
+    width: calc(50% - 15px);
+}
+
+.contact-form form .left {
+    float: left;
+}
+
+.contact-form form .right {
+    float: right;
+}
+
+.contact-form form textarea {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+
+/*Footer*/
+
+footer#main-footer {
+    padding-bottom: 80px;
+    text-align: center;
+}
+
+footer#main-footer img {
+    vertical-align: middle;
+}
+
+footer#main-footer span {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    color: black;
+    line-height: 1.2;
+    margin-left: 30px;
+}
