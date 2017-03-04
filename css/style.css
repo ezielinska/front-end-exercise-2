@@ -106,7 +106,7 @@ p.description {
 .subpage-header {
     padding: 30px 0;
     background-color: black;
-    background-image: url('images/background.png');
+    background-image: url('../images/background.png');
     background-repeat: no-repeat;
 }
 
@@ -138,7 +138,7 @@ p.description {
 
 .site-intro {
     background-color: black;
-    background-image: url('images/background.png');
+    background-image: url('../images/background.png');
     background-repeat: no-repeat;
     background-position: center 100%;
     min-height: 100vh;
